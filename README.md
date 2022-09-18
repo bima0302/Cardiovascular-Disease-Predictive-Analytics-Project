@@ -9,7 +9,7 @@ Organisasi Kesehatan Dunia (WHO) memperkirakan 12 juta kematian terjadi di selur
 
   
 
-Pada proyek ini, dataset berasal dari situs web [Kaggle](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression), dan berasal dari studi kardiovaskular yang sedang berlangsung pada penduduk kota Framingham, Massachusetts. Tujuannya adalah untuk memprediksi apakah pasien memiliki risiko 10 tahun penyakit jantung koroner (PJK). Dataset menyediakan informasi pasien. Ini mencakup lebih dari 4.000 catatan dan 15 atribut.
+Pada proyek ini, dataset berasal dari situs web [Kaggle](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression), dan bersumber dari studi kardiovaskular yang berlangsung pada penduduk kota Framingham, Massachusetts. Tujuannya adalah untuk memprediksi apakah pasien memiliki risiko penyakit jantung koroner (PJK) dalam 10 tahun mendatang. Dataset ini menyediakan informasi pasien yang mencakup lebih dari 4.000 catatan dan 15 atribut.
 
   
 
