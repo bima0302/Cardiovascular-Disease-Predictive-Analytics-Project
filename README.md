@@ -335,7 +335,7 @@ Dalam projek ini, metrik evaluasi yang idgunakan adalah sebagai berikut.
   
   
 ## Kesimpulan
-Kesimpulan dari hasil proyek *predictive analytic* ini adalah sebagai berikut.
+Kesimpulan dari hasil proyek *predictive analytic* ***Heart Diseases*** ini adalah sebagai berikut.
 - Pria lebih rentan terhadap penyakit jantung daripada wanita. Peningkatan Usia, jumlah rokok yang dihisap per hari dan Tekanan Darah *systolic* juga menunjukkan peningkatan kemungkinan terkena penyakit jantung.
 - Model terbaik, yaitu *Logistic Regression* memprediksi dengan akurasi 86,4%.
 - Hasil prediksi mungkin akan lebih baik apabila data lebih banyak.
