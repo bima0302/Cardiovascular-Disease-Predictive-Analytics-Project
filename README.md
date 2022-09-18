@@ -41,7 +41,6 @@ Dataset yang digunakan adalah **Heart Diseases** yang bersumber dari [Kaggle](ht
 
 ![3](https://raw.githubusercontent.com/bzizmza/First-Project---Predictive-Analytics/main/img/3.png)
 
-Dataset Titanic bersumber dari https://www.kaggle.com/c/titanic/data.
 ### Fitur pada dataset:
 Dataset ini, ada 10 variabel dengan 9 fitur dan 1 label sebagai berikut.	
 - Demografi singkat:
