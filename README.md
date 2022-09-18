@@ -5,7 +5,7 @@
 
 ## Domain Proyek
 
-Organisasi Kesehatan Dunia (WHO) memperkirakan 12 juta kematian terjadi di seluruh dunia, setiap tahun karena penyakit jantung. Setengah dari kematian di Amerika Serikat dan negara maju lainnya disebabkan oleh penyakit kardiovaskular. Prognosis awal penyakit kardiovaskular dapat membantu dalam membuat keputusan tentang perubahan gaya hidup pada pasien berisiko tinggi dan pada gilirannya mengurangi komplikasi. Penelitian ini bertujuan untuk menunjukkan dengan tepat faktor - faktor risiko penyakit jantung yang paling relevan, serta memprediksi risiko secara keseluruhan menggunakan regresi logistik.
+Organisasi Kesehatan Dunia (WHO) memperkirakan 12 juta kematian terjadi di seluruh dunia, setiap tahun karena penyakit jantung [1]. Setengah dari kematian di Amerika Serikat dan negara maju lainnya disebabkan oleh penyakit kardiovaskular [2]. Prognosis awal penyakit kardiovaskular dapat membantu dalam membuat keputusan tentang perubahan gaya hidup pada pasien berisiko tinggi dan pada gilirannya mengurangi komplikasi [3]. Penelitian ini bertujuan untuk menunjukkan dengan tepat faktor - faktor risiko penyakit jantung yang paling relevan, serta memprediksi risiko secara keseluruhan menggunakan *Logistic Regression*.
 
   
 
@@ -29,7 +29,7 @@ Pada proyek ini, dataset berasal dari situs web [Kaggle](https://www.kaggle.com/
 
 ### Solution Statements:
 
-- Menggunakan metode *Logistic Regression*, dimana metode ini merupakan metode yang efektif untuk melakukan klasifikasi yang outputnya hanya 0 dan 1 atau True/False.
+- Menggunakan metode *Logistic Regression*, dimana metode ini merupakan metode yang efektif untuk melakukan klasifikasi yang outputnya hanya 0 dan 1 atau *True*/*False*.
 
 - Menggunakan metode *Random Forest*, dimana metode ini simpel untuk diimplementasikan, namun powerful. Maka dari itu, *Random Forest* digunakan sebagai pembanding dari *Logistic Regression*.
 
@@ -93,7 +93,7 @@ Dataset ini, ada 10 variabel dengan 9 fitur dan 1 label sebagai berikut.
 	| Prevalent Hyp    	| Pernah hipertensi atau tidak                            	|
 	| Diabetes         	| Pernah diabetes atau tidak                              	|
 
-- **BerdasarkanStatistika:**
+- **Berdasarkan Statistika:**
 
 	| Fitur      	| Penjelasan                                	|
 	|------------	|-------------------------------------------	|
@@ -334,6 +334,11 @@ Dalam projek ini, metrik evaluasi yang idgunakan adalah sebagai berikut.
 
   
   
+## Kesimpulan
+Kesimpulan dari hasil proyek *predictive analytic* ini adalah sebagai berikut.
+- Pria lebih rentan terhadap penyakit jantung daripada wanita. Peningkatan Usia, jumlah rokok yang dihisap per hari dan Tekanan Darah *systolic* juga menunjukkan peningkatan kemungkinan terkena penyakit jantung.
+- Model terbaik, yaitu *Logistic Regression* memprediksi dengan akurasi 86,4%.
+- Hasil prediksi mungkin akan lebih baik apabila data lebih banyak.
 
 ## Daftar Pustaka:
 
