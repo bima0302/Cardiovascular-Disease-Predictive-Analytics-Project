@@ -106,7 +106,9 @@ Dataset ini, ada 10 variabel dengan 9 fitur dan 1 label sebagai berikut.
 
 - **Berdasarkan Variabel prediksi:**
 
-	10 tahun risiko penyakit jantung koroner (PJK)
+	| Fitur      	| Penjelasan                                	|
+	|------------	|-------------------------------------------	|
+	| TenYearCHD   	| 10 tahun risiko penyakit jantung koroner 		|
 
   
 
