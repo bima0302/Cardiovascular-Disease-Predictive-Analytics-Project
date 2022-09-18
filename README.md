@@ -45,7 +45,7 @@ Pada proyek ini, dataset berasal dari situs web [Kaggle](https://www.kaggle.com/
 
 Dataset yang digunakan adalah ***Heart Diseases*** yang bersumber dari [Kaggle](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression). Dikutip dari [algorit.ma](https://algorit.ma/blog/exploratory-data-analysis-2022/), Analisis Data Eksplorasi mencakup proses kritis uji investigasi pendahuluan pada data untuk mengidentifikasi pola, menemukan anomali, menguji hipotesis , dan periksa asumsi melalui statistik ringkasan dan representasi grafis (visual).
 
-- Dataset ini terdiri dari 4238 baris data, dan memiliki 16 kolom data. Berikut adalah pengecekan dataset dengan menggunakan fungsi *shape*.
+- Dataset ini terdiri dari 4238 baris data, dan memiliki 16 kolom data. Berikut adalah pengecekan jumlah baris dan kolom pada dataset dengan menggunakan memanggil variabel **data** yang telah dideklarasikan.
 
 	![2](https://raw.githubusercontent.com/bzizmza/First-Project---Predictive-Analytics/main/img/2.png)
 
