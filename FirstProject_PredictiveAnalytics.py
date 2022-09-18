@@ -127,7 +127,7 @@ zip_ref.close()
 # %ls
 
 data = pd.read_csv("/content/heart-disease/framingham.csv")
-data.head()
+data
 
 """## Exploratory Data Analysis
 Quoted from [algorit.ma](https://algorit.ma/blog/exploratory-data-analysis-2022/), Exploratory Data Analysis covers the critical process of preliminary investigation tests on data to identify patterns, find anomalies, test hypotheses, and check assumptions through summary statistics and graphical (visual) representations.
