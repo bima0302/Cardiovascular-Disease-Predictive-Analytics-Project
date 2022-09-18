@@ -33,13 +33,13 @@ Daftar Pustaka:
 Dataset yang digunakan adalah **Heart Diseases** yang bersumber dari [Kaggle](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression). Dikutip dari [algorit.ma](https://algorit.ma/blog/exploratory-data-analysis-2022/), Analisis Data Eksplorasi mencakup proses kritis uji investigasi pendahuluan pada data untuk mengidentifikasi pola, menemukan anomali, menguji hipotesis , dan periksa asumsi melalui statistik ringkasan dan representasi grafis (visual).
 - Dataset ini terdiri dari 4238 baris data, dan memiliki 16 kolom data.
 
-![1](img\1.png)
+![1](img/1.png)
 
-![2](img\2.png)
+![2](img/2.png)
 
 - Dataset memiliki beberapa nilai kosong atau NaN yang perlu dilakukan penanganan.
 
-![3](img\3.png)
+![3](img/3.png)
 
 Dataset Titanic bersumber dari https://www.kaggle.com/c/titanic/data.
 ### Fitur pada dataset:
@@ -67,54 +67,54 @@ Dataset ini, ada 10 variabel dengan 9 fitur dan 1 label sebagai berikut.
 ### Korelasi pada dataset:
 Untuk menjelaskan korelasi fitur – fitur pada dataset, diperlukan visualisasi data yang terdiri sebagai berikut. Namun, ada baiknya untuk melihat NaN values yang dimiliki oleh dataset dan dilakukan penanganan. Menurut [DQLab.id](https://www.dqlab.id/kursus-belajar-data-mengenal-apa-itu-missing-value), nilai NaN akan membuat data tidak dapat digunakan, dan sayang untuk dibuang begitu saja. Informasi penting di banyak baris hanya karena 1-2 nilai yang hilang, jadi salah satu langkah yang tepat adalah mengisi nilai yang hilang. Pengisian data menggunakan median akan membantu “menetralisir” data yang hilang, karena pengisian median tidak akan menggeser atau menambah varians data.
 
-![3](img\3.png)
+![3](img/3.png)
 
 #### Univariate Analysis
 -   Barplot Pertama
 
-	![5](img\5.png)
+	![5](img/5.png)
 
 	Pada barplot pertama yang ada pada notebook, dapat disimpulkan bahwa lebih sedikit responden yang berjenis kelamin *male*.
 
 -   Barplot Kedua
 
-	![6](img\6.png)
+	![6](img/6.png)
 
 	Pada barplot kedua yang ada pada notebook, dapat disimpulkan bahwa responden yang bukan perokok sedikit lebih tinggi dibandingkan responden yang merupakan perokok.
 
 -   Barplot Ketiga
 
-	![7](img\7.png)
+	![7](img/7.png)
 
 	Pada barplot ketiga, dapat disimpulkan bahwa responden yang tidak memiliki riwayat stroke lebih tinggi dibandingkan responden yang memiliki riwayat stroke.
 
 -   Barplot Keempat
 
-	![8](img\8.png)
+	![8](img/8.png)
 
 	Pada barplot keempat, dapat disimpulkan bahwa responden yang tidak memiliki riwayat hipertensi lebih tinggi dibandingkan responden yang memiliki riwayat hipertensi.
 
 -   Barplot Kelima
 
-	![9](img\9.png)
+	![9](img/9.png)
 
 	Pada barplot kelima, dapat disimpulkan bahwa responden yang tidak memiliki riwayat diabetes lebih tinggi dibandingkan responden yang memiliki riwayat diabetes.
 
 -   Barplot Keenam
 
-	![10](img\10.png)
+	![10](img/10.png)
 
 	Pada barplot kelima, dapat disimpulkan bahwa responden yang tidak memiliki resiko penyakit jantung dalam kurun 10 tahun kedepan lebih tinggi dibandingkan responden yang memiliki resiko penyakit jantung dalam kurun 10 tahun kedepan.
 
 -   Barplot Keenam
 
-	![11](img\11.png)
+	![11](img/11.png)
 
 	Pada barplot keenam, dapat diketahui fitur numerical responden yang memiliki resiko penyakit jantung.
 
 #### Multivariate Analysis
 
-![12](img\12.png)
+![12](img/12.png)
 
 Dari heatmap pada notebook, dapat terlihat bahwa semua fitur berkorelasi.
 
@@ -141,7 +141,7 @@ Model – model yang saya pakai dalam projek ini adalah:
 
 Berikut adalah hasil akurasi model:
 
-![13](img\13.png)
+![13](img/13.png)
 
 ## Evaluasi
 Penggunaan Regresi Logistik dalam data terbukti lebih baik berdasarkan metrik akurasi yang diberikan. Namun terdapat anomali berupa MSE dari Regresi Logistik yang lebih tinggi dari Random Forest. Dari hasil pemodelan ini, Regresi Logistik dipilih sebagai model yang akan digunakan dalam prediksi PJK.
@@ -162,10 +162,10 @@ Dalam projek ini, metrik evaluasi yang idgunakan adalah sebagai berikut.
 
 Berikut adalah hasil akurasi model:
 
-![13](img\13.png)
+![13](img/13.png)
 
 Berikut adalah hasil MSE model:
 
-![14](img\14.png)
+![14](img/14.png)
 
-![15](img\15.png)
+![15](img/15.png)
