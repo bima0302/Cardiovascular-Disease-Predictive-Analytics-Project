@@ -211,7 +211,7 @@ Untuk menjelaskan korelasi fitur – fitur pada dataset, diperlukan visualisasi 
 
 - Barplot Ketujuh
 
-	Pada barplot keenam, dapat diketahui fitur numerical responden yang memiliki resiko penyakit jantung.
+	Pada barplot keenam, dapat diketahui fitur *numerical* responden yang memiliki resiko penyakit jantung.S
 
 
   
@@ -222,7 +222,7 @@ Untuk menjelaskan korelasi fitur – fitur pada dataset, diperlukan visualisasi 
   
 
 #### **Multivariate Analysis**
-Dari heatmap pada notebook berikut ini, dapat terlihat bahwa semua fitur berkorelasi.
+Dari *heatmap* pada *notebook* berikut ini, dapat terlihat bahwa semua fitur berkorelasi.
   
 
 ![12](https://raw.githubusercontent.com/bzizmza/First-Project---Predictive-Analytics/main/img/12.png)
@@ -237,25 +237,45 @@ Dari heatmap pada notebook berikut ini, dapat terlihat bahwa semua fitur berkore
 
   
 
-Dalam data preparation, dilakukan beberapa hal berikut sebelum memasukkan data ke model latih:
+Dalam *data preparation*, dilakukan beberapa hal berikut sebelum memasukkan data ke model latih:
 
   
 
-- **Drop column yang kurang relevan**<br>
+- ***Drop column* yang kurang relevan**<br>
 
-	Drop column yang kurang relevan. Hal ini akan membantu efektivitas dalam fitting model yang dilakukan.
+	*Drop column* yang kurang relevan. Hal ini akan membantu efektivitas dalam fitting model yang dilakukan. Pada dataset ini, seperti yang ditunjukkan pada gambar dbawah, kolom "***education***" tidak memiliki pengaruh pada hasil prediksi kasus penyakit jantung sehingga perlu dilakukan proses *drop* pada kolom tersebut.
+
+	![2](https://raw.githubusercontent.com/bzizmza/First-Project---Predictive-Analytics/main/img/2.png)
 
 - **Mengisi *missing value* dengan median**<br>
 
-	Pengisian data dengan menggunakan median akan membantu "menetralkan" data yang hilang, karena pengisian median tidak akan menggeser atau menambah varians dari data.
+	Pengisian data dengan menggunakan median akan membantu "menetralkan" data yang hilang, karena pengisian median tidak akan menggeser atau menambah varians dari data. Pada tabel berikut ini adalah beberapa kolom pada dataset yang memiliki *missing value*.
+
+	
+	| Kolom           	| Jumlah NaN 	|
+	|-----------------	|------------	|
+	| cigsPerDay      	| 29         	|
+	| BPMeds          	| 53         	|
+	| totChol         	| 50         	|
+	| BMI             	| 19         	|
+	| heartRate       	| 1          	|
+	| glucose         	| 388        	|
+
+	Pada proyek ini, dataset akan di isi menggunakan fungsi "fillna()" dengan nilai median, dimana nilai median dapat dipanggil menggunakan fungsi "median()".
 
 - ***Train-Test-Split***<br>
 
-	Membagi dataset menjadi data latih dan data validasi dilakukan supaya kita dapat melakukan validasi dengan benar tanpa bias dari model.
+	Membagi dataset menjadi data *train* dan data *test* dilakukan supaya kita dapat melakukan validasi dengan benar tanpa bias dari model. Pada proyek ini proses pembagian antara data *train* dan data *test* menggunakan teknik pengambilan sampel secara acak (*Random Sampling*) dengan rasio data *test* sebesar 25% dari jumlah data bersih atau data yang telah dilakukan proses *cleaning* sebelumnya.
+
+	| Data          	| Jumlah 	|
+	|---------------	|--------	|
+	| Data bersih   	| 4238   	|
+	| Data *training* 	| 3178   	|
+	| Data *testing*  	| 1060   	|
 
 - **Standarisasi**<br>
 
-	*Scaling* ini dilaksanakan untuk membantu model *machine learning* yang akan dipakai lebih mudah diolah.
+	*Scaling* ini dilaksanakan untuk membantu model *machine learning* yang akan dipakai lebih mudah diolah. Pada proyek ini, digunakanlah *StandardScaler* sebagai fitur standarisasi. Proses standarisasi ini dilakukan pada kolom-kolom berfitur *numerical* seperti cigsPerDay, totChol, sysBP, diaBP, BMI, heartRate, dan glucose.
 
   
 
@@ -267,15 +287,15 @@ Model – model yang saya pakai dalam projek ini adalah:
 
 -  ***Logistic Regression***<br>
 
-	*Logistic Regression* adalah sebuah algoritma klasifikasi di mana algoritma ini mencari hubungan antar fitur diskrit/kontinu dengan probabilitias hasi loutput diskrit tertentu.
+	*Logistic Regression* adalah sebuah algoritma klasifikasi di mana algoritma ini mencari hubungan antar fitur diskrit atau kontinu dengan probabilitias hasil output diskrit tertentu. Pada proyek ini, data *training* digunakan sebagai parameter dan nilai max_iter nya adalah 1000.
 
 -  ***Random Forest***<br>
 
-	*Random Forest* merupakan algoritma yang menggabungkan keluaran dari beberapa pohon keputusan untuk mencapai satu hasil dengan dibentuk dari banyak pohon (*tree*) yang diperoleh melalui proses *bagging* atau *bootstrap aggregating*.
+	*Random Forest* merupakan algoritma yang menggabungkan keluaran dari beberapa pohon keputusan untuk mencapai satu hasil dengan dibentuk dari banyak pohon (*tree*) yang diperoleh melalui proses *bagging* atau *bootstrap aggregating*. Pada proyek ini, data *training* digunakan sebagai parameter dan nilai n_estimators nya adalah 1000, max_depth nya adalah 16, random_state nya adalah 55, n_jobs nya adalah 1.
 
   
 
-Berikut adalah hasil akurasi model:
+Berikut adalah hasil akurasi dari kedua model:
 
 | Model                 	| *Accuracy* 	|
 |-----------------------	|----------		|
