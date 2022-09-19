@@ -95,20 +95,20 @@ Dataset ini, ada 10 variabel dengan 9 fitur dan 1 label sebagai berikut.
 
 - **Berdasarkan Statistika:**
 
-	| Fitur      	| Penjelasan                                	|
-	|------------	|-------------------------------------------	|
-	| Tot Chol   	| Total level kolesterol                    	|
-	| Sys BP     	| Tekanan darah *systolic*                  	|
-	| Dia BP     	| tekanan darah *diastolic*                 	|
-	| BMI        	| *Body Mass Index* atau indeks massa tubuh 	|
-	| Heart Rate 	| *Heart rate* atau detak jantung           	|
-	| Glucose    	| Level gula darah (*Continuous*)             	|
+	| Fitur      		| Penjelasan                                	|
+	|------------------	|-------------------------------------------	|
+	| Tot Chol   		| Total level kolesterol                    	|
+	| Sys BP     		| Tekanan darah *systolic*                  	|
+	| Dia BP     		| tekanan darah *diastolic*                 	|
+	| BMI        		| *Body Mass Index* atau indeks massa tubuh 	|
+	| Heart Rate 		| *Heart rate* atau detak jantung           	|
+	| Glucose    		| Level gula darah (*Continuous*)             	|
 
 - **Berdasarkan Variabel prediksi:**
 
-	| Fitur      	| Penjelasan                                	|
-	|------------	|-------------------------------------------	|
-	| TenYearCHD   	| 10 tahun risiko penyakit jantung koroner 		|
+	| Fitur      		| Penjelasan                                	|
+	|------------------	|-------------------------------------------	|
+	| TenYearCHD   		| 10 tahun risiko penyakit jantung koroner 		|
 
   
 
